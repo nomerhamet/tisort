@@ -14,64 +14,98 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+      <div class="side-menu w-500">
+          <div class="inner-padding">
+          <div class="closer">
+        <span id="close-icon">X</span>
+      </div>
+      <ul >
+          <li> <a href="#">ANASAYFA</a></li>
+          <li><a href="#">HAKKIMIZDA</a></li>
+          <li>
+            <a>ERKEK <span class="coret">❯</span></a>
+            <ul class="sub-menu">
+                <li><a href="#">T-Shirt</a></li>
+                <li><a href="#">Hoodie</a></li>
+                <li><a href="#">Tanga</a></li>
+                <li><a href="#">Tayt</a></li>
+            </ul>
+          </li>
+          <li>
+            <a>KADIN <span class="coret">❯</span></a>
+            <ul class="sub-menu">
+                <li><a href="#">T-Shirt</a></li>
+                <li><a href="#">Hoodie</a></li>
+                <li><a href="#">Tanga</a></li>
+                <li><a href="#">Tayt</a></li>
+          </li>
+          <li><a href="#">İLETİŞİM</a></li>
+      </ul>
+      <div class="user-nav">
+          
+          <a href="#"><ion-icon name="cart"></ion-icon></a>
+          <a href="#"><ion-icon name="person"></ion-icon></a>
+      </div>
+    </div>
+    </div>
+    <header  >
       <div class="menu">
         <ul class="mlist">
-          <li>
+          <li class="mlist-item"> 
             <a href="#"> Erkek</a>
             <ul class="dropmenu">
-                <li>
-                    <a href="#">T-Shirt </a>
-                </li>
-                <li>
-                    <a href="#">Hoodie </a>
-                </li>
-                <li>
-                    <a href="#">Boxer</a>
-                </li>
-                <li>
-                    <a href="#">Corap</a>
-                </li>
+              <li class="dropmenu-item">
+                <a href="#">T-Shirt </a>
+              </li>
+              <li class="dropmenu-item">
+                <a href="#">Hoodie </a>
+              </li>
+              <li class="dropmenu-item">
+                <a href="#">Boxer</a>
+              </li>
+              <li class="dropmenu-item">
+                <a href="#">Corap</a>
+              </li>
             </ul>
           </li>
-          <li>
+          <li class="mlist-item"  >
             <a href="#"> Kadın</a>
             <ul class="dropmenu">
-                <li>
-                    <a href="#">T-Shirt </a>
-                </li>
-                <li>
-                    <a href="#">Crop </a>
-                </li>
-                <li>
-                    <a href="#">Tanga</a>
-                </li>
-                <li>
-                    <a href="#">Corap</a>
-                </li>
+              <li class="dropmenu-item"> 
+                <a href="#">T-Shirt </a>
+              </li>
+              <li class="dropmenu-item">
+                <a href="#">Crop </a>
+              </li>
+              <li class="dropmenu-item">
+                <a href="#">Tanga</a>
+              </li>
+              <li class="dropmenu-item">
+                <a href="#">Corap</a>
+              </li>
             </ul>
           </li>
-          <li>
+          <li class="mlist-item">
             <a href="#"> Yeni Sezon</a>
             <ul class="dropmenu">
-                <li>
-                    <a href="#">T-Shirt </a>
-                </li>
-                <li>
-                    <a href="#">Sort </a>
-                </li>
-                <li>
-                    <a href="#">Bikini</a>
-                </li>
-                <li>
-                    <a href="#">Tayt</a>
-                </li>
+              <li class="dropmenu-item">
+                <a href="#">T-Shirt </a>
+              </li>
+              <li class="dropmenu-item">
+                <a href="#">Sort </a>
+              </li>
+              <li class="dropmenu-item">
+                <a href="#">Bikini</a>
+              </li>
+              <li class="dropmenu-item">
+                <a href="#">Tayt</a>
+              </li>
             </ul>
           </li>
-          <li>
+          <li class="mlist-item">
             <a href="#"> Kampanya</a>
           </li>
-          <li>
+          <li class="mlist-item" >
             <a href="#"> Hakkımızda</a>
           </li>
         </ul>
@@ -79,7 +113,7 @@
       <div class="logoholder">
         <a href="index.html"><img src="img/logomale.png" width="100%" /></a>
       </div>
-      <div class="menunav">
+      <div class="menunav ">
         <ul>
           <li>
             <a href="#"><ion-icon name="search"></ion-icon></a>
@@ -93,7 +127,29 @@
         </ul>
       </div>
     </header>
+<div class="arka"> 
+    <div class="animasyon">
+        <h1 class="animasyonyazi">Lorem ipsum <br> dolor sit amet. 
+        </h1>
+       <button class="animasyon-cinsiyet">ERKEK</button>
+       <button class="animasyon-cinsiyet">KADIN</button> 
+    
+    </div>
+    
+</div>
+<div class="aciklama">
+    <h2 class="aciklama-yazi">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi doloremque modi ad omnis asperiores quasi architecto magni unde id!
+    </h2>
+</div>
 
+<div class="ureticiler">
+    <div class="row">
+    <div class="col-lg-4 col-sm-12"> <img class="ureticilerimg" src="img/uretici1.png" height="100%" width="100%"></div>
+    <div class="col-lg-4 col-sm-12"> <img class="ureticilerimg" src="img/uretici2.png" height="100%" width="100%"></div>
+    <div class="col-lg-4 col-sm-12"> <img class="ureticilerimg" src="img/uretici3.png" height="100%" width="100%"></div>
+</div>
+</div>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>

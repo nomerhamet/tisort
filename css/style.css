@@ -1,5 +1,5 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 body {
   font-family: "Merriweather Sans", sans-serif;
@@ -14,7 +14,7 @@ body {
   transition: 0.5s;
 }
 .menu li a:hover {
-  color: red;
+  color: rgb(255, 255, 255);
 }
 .menu .mlist {
   display: flex;
@@ -22,66 +22,220 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  
 }
-.menu ul li {
-  padding: 0 0.2rem;
-  
-}
-header{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 4rem;
-}
-.menunav ul{
-    display: flex;
-    width: 100%;
-    list-style: none;
-    justify-content: flex-end;
-    margin: 0;
 
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(124, 124, 124, 0.4248074229691877) 0%,
+    rgba(255, 252, 252, 0) 85%
+  );
+}
+.menunav ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
 }
 .menunav ul li {
-    padding: 0 0.5rem;
-  }
-  .menunav ul li a{
-      font-size: 26px;
-      color: #333;
-  }
-  .logoholder{
-      padding: 0 5rem ;
-      width: 30%;
-  }
-  .menu,
-  .logoholder,
-  .menunav{
-      width: 30%;
-  }
-  .menunav{
-      display: flex;
-  }
-.dropmenu{
-    opacity: 0;
-    background-color: #f8f8f8;
-    padding: 0.5rem ;
-    position: absolute;
-    width: 100px ;
-    transition: all .7s;
-    
+  padding: 0 0.5rem;
 }
-.dropmenu li {
-    display: block;
-    width: 100%;
-    font-size: 21px;
+.menunav ul li a {
+  font-size: 18px;
+  color: #333;
+}
+.logoholder {
+  padding: 0 5rem;
+  width: 30%;
+}
+.menu,
+.logoholder,
+.menunav {
+  width: 30%;
+}
+.menunav {
+  display: flex;
+}
+.dropmenu {
+  display: none;
+  background-color: white;
+  padding: 1rem 0;
+  position: absolute;
+  width: 100px;
+  transition: all 0.7s;
+  left: 0;
+  top: 38px;
+}
+.dropmenu-item {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
 }
 .mlist li:first-child:hover .dropmenu {
-    opacity: 1;
+  display: block;
 }
-.mlist li:nth-child(2):hover .dropmenu{
-    opacity: 1;
+.mlist li:nth-child(2):hover .dropmenu {
+  display: block;
 }
-.mlist li:nth-child(3):hover .dropmenu{
-    opacity: 1;
+.mlist li:nth-child(3):hover .dropmenu {
+  display: block;
+}
+.arka {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/arkaplan.png);
+  background-size: cover;
+  background-position: center;
+}
+.mlist-item {
+  padding: 5px 0.3rem;
+  position: relative;
+}
+.mlist-item:hover {
+  border-bottom: 1px solid black;
+}
+.animasyon {
+  padding: 0 0 0 64px;
+}
+.animasyon-cinsiyet {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-style: bold;
+  padding: 0.8rem 0.8rem;
+  margin: 0 15px 0 0;
+  border: 1px solid black;
+}
+.animasyon-cinsiyet:hover {
+  color: revert;
+  background-color: transparent;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+.aciklama-yazi {
+  text-align: center;
+  padding: 2.3rem 2.5rem;
+  font-weight: 100;
+}
+.ureticiler {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+}
+.uretici-resim {
+  width: 27%;
+  height: 100%;
+}
+.side-menu {
+  width: 0px;
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  overflow: scroll;
+  background: #f3f3f3;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.inner-padding {
+  padding: 3rem;
+}
+.closer {
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 40px;
+  color: var(--close-color);
+}
+.closer span {
+  text-align: end;
+  display: block;
+  cursor: pointer;
+}
+.side-menu ul li a {
+  text-decoration: none;
+  color: var(--menu-baslik-rengi);
+  font-size: var(--menu-baslik-font);
+  font-family: var(--menu-baslik-font-family);
+  font-weight: 300;
+  padding-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.side-menu ul li {
+  list-style: none;
+  width: 100%;
+  position: relative;
+  padding: 1rem 0;
+  border-top: 1px solid var(--li-border-color);
+  cursor: pointer;
+}
+.side-menu ul li .sub-menu {
+  max-height: 0px;
+  overflow: hidden;
+}
+.sub-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.side-menu ul li .coret {
+  width: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 24px;
+  height: 24px;
+  color: var(--donen-oklar);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.side-menu ul li .sub-menu {
+  max-height: 0px;
+  overflow: hidden;
+}
+.user-nav {
+  padding: 1rem 0;
+  display: flex;
+}
+.user-nav a {
+  padding-right: 1rem;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.inner-padding {
+  padding: 3rem;
+}
+.w-500 {
+  width: 500px;
 }
